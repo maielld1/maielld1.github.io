@@ -1,6 +1,8 @@
 ---
 layout: single
-title: About Me
+title: "About Me"
+permalink: /about/
+author_profile: true
 ---
 
 In a time where "alternative facts" seem to provide the basis for the decision making of our world leaders, I believe it is important to change this. My strengths are in Data Analytics and Software Development. I aim to use my skill set to help people make data-driven decisions based on the proven facts that are available.
