@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: MTA Turnstile Study - Week 1 at Metis
 permalink: /posts/2017/06/MTA-Analysis
 ---

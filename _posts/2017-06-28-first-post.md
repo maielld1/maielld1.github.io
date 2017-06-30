@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: First Blog
 permalink: /posts/2017/06/first-post
 ---
