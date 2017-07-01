@@ -49,7 +49,7 @@ Then applying our income and wealth data and scoring each station accordingly, t
 
 #### High-Potential Stations
 
-**Stations: **                                        **Scores**
+**Stations:**                                        **Scores**
 1. 14th Street–Union Square:                         1.80
 2. 34th Street–Herald Square:                        1.79
 3. 59th Street:                                      1.48
