@@ -79,7 +79,7 @@ analytics:
 author:
   name             : "Devin Maiello"
   avatar           : "devin photo.jpg"
-  bio              : "Solving problems with math and cool tech"
+  bio              : "Seeking answers with math and cool tech"
   location         : "NY"
   email            : "maiellodevin@gmail.com"
   uri              :
@@ -94,13 +94,13 @@ author:
   keybase          :
   instagram        :
   lastfm           :
-  linkedin         :
+  linkedin         : "maiellodevin"
   pinterest        :
   soundcloud       :
   stackoverflow    : # "123456/username" (the last part of your profile url, e.g. http://stackoverflow.com/users/123456/username)
   steam            :
   tumblr           :
-  twitter          :
+  twitter          : "@dev_your_yellow"
   vine             :
   weibo            :
   xing             :
