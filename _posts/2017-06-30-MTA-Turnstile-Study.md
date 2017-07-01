@@ -4,7 +4,7 @@ title: MTA Turnstile Study - Week 1 at Metis
 permalink: /posts/2017/06/MTA-Analysis
 ---
 
-For the first project of the Metis bootcamp, we were tasked with drawing insights from messy MTA subway turnstile data (http://web.mta.info/developers/turnstile.html) in NYC.
+For the first project of the Metis bootcamp, we were tasked with drawing insights from messy [MTA subway turnstile data](http://web.mta.info/developers/turnstile.html) in NYC.
 
 ### The problem
 
@@ -75,7 +75,7 @@ Now we can look at the subway rider volume by day of the week and time of day to
 
 <div class="12u$"><span class="image fit"><img src="/images/MTA/Line Chart - Most Appealing.png" alt="" /></span></div>
 
-<div class="12u$"><span class="image fit"><img src="/images/MTA/Bar Chart - Most Volume.png" alt="" /></span></div>
+<div class="12u$"><span class="image fit"><img src="/images/MTA/Line Chart - Most Volume.png" alt="" /></span></div>
 
 <div class="12u$"><span class="image fit"><img src="/images/MTA/times.png" alt="" /></span></div>
 
