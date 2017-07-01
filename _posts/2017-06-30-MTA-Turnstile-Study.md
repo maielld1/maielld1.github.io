@@ -49,17 +49,17 @@ Then applying our income and wealth data and scoring each station accordingly, t
 
 #### High-Potential Stations
 
-**Stations**                                        **Scores**
-1. 14th Street–Union Square                         1.80
-2. 34th Street–Herald Square                        1.79
-3. 59th Street                                      1.48
-4. Chambers Street                                  1.36
-5. 59th Street–Columbus Circle                      1.18
-6. Canal Street                                     1.13
-7. 96th Street                                      0.83
-8. West Fourth Street–Washington Square             0.60
-9. 14th Street                                      0.56
-10. 72nd Street                                     0.54
+**Stations: **                                        **Scores**
+1. 14th Street–Union Square:                         1.80
+2. 34th Street–Herald Square:                        1.79
+3. 59th Street:                                      1.48
+4. Chambers Street:                                  1.36
+5. 59th Street–Columbus Circle:                      1.18
+6. Canal Street:                                     1.13
+7. 96th Street:                                      0.83
+8. West Fourth Street–Washington Square:             0.60
+9. 14th Street:                                      0.56
+10. 72nd Street:                                     0.54
 
 We see Chambers, Canal, and Columbus Circle jump way up! Interesting!
 
@@ -67,17 +67,18 @@ Also noteworthy is that Union SQ and Herald SQ are at the top in both rankings. 
 
 Here's a map of our top stations:
 
-![png](station_map.png)
+<div class="12u$"><span class="image fit"><img src="/images/MTA/station_map.png" alt="" /></span></div>
 
 Now we can look at the subway rider volume by day of the week and time of day to get an idea of when to look for donors.
 
-![png](Bar Chart - Most Appealing.png)
+<div class="12u$"><span class="image fit"><img src="/images/MTA/Bar Chart - Most Appealing.png" alt="" /></span></div>
 
-![png](Line Chart - Most Appealing.png)
+<div class="12u$"><span class="image fit"><img src="/images/MTA/Line Chart - Most Appealing.png" alt="" /></span></div>
 
-![png](Line Chart - Most Volume.png)
+<div class="12u$"><span class="image fit"><img src="/images/MTA/Bar Chart - Most Volume.png" alt="" /></span></div>
 
-![png](times.png)
+<div class="12u$"><span class="image fit"><img src="/images/MTA/times.png" alt="" /></span></div>
+
 
 ### Summary and Conclusions
 
