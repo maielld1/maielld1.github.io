@@ -1,14 +1,14 @@
 ---
 layout: single
-title: MTA Turnstile Study - Week 1 at Metis
+title: <span style="color:black">MTA Turnstile Study - Week 1 at Metis</span>
 header:
   overlay_image: http://c7.alamy.com/comp/F9Y3M5/new-york-city-subway-station-with-graffiti-in-the-background-and-subway-F9Y3M5.jpg
+  overlay-filter: 0.5
   caption: "Photo credit: [**Alamy**](https://alamy.com)"
-  cta_url: "https://alamy.com"
 permalink: /posts/2017/06/MTA-Analysis
 ---
 
-For the first project of the Metis bootcamp, we were tasked with drawing insights from messy [MTA subway turnstile data](http://web.mta.info/developers/turnstile.html) in NYC.
+<span style="color:black">For the first project of the Metis bootcamp, we were tasked with drawing insights from messy [MTA subway turnstile data](http://web.mta.info/developers/turnstile.html) in NYC.</span>
 
 ### The problem
 
@@ -71,7 +71,9 @@ Also noteworthy is that Union SQ and Herald SQ are at the top in both rankings. 
 
 Here's a map of our top stations:
 
-<div class="12u$"><span class="image fit"><img src="/images/MTA/station_map.png" alt="" /></span></div>
+<figure>
+	<img src="/images/MTA/station_map.png">
+</figure>
 
 Now we can look at the subway rider volume by day of the week and time of day to get an idea of when to look for donors.
 
@@ -81,9 +83,14 @@ Now we can look at the subway rider volume by day of the week and time of day to
     <figcaption>Top stations by volume and composite appeal score</figcaption>
 </figure>
 
-<div class="12u$"><span class="image fit"><img src="/images/MTA/Bar Chart - Most Appealing.png" alt="" /></span></div>
+<figure>
+	<img src="/images/MTA/Bar Chart - Most Appealing.png">
+</figure>
 
-<div class="12u$"><span class="image fit"><img src="/images/MTA/times.png" alt="" /></span></div>
+<figure>
+	<img src="/images/MTA/times.png">
+	<figcaption>Peak volume at rush hour as we would expect</figcaption>
+</figure>
 
 
 ### Summary and Conclusions
