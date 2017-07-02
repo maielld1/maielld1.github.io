@@ -1,6 +1,10 @@
 ---
 layout: single
 title: MTA Turnstile Study - Week 1 at Metis
+header:
+  overlay_image: http://c7.alamy.com/comp/F9Y3M5/new-york-city-subway-station-with-graffiti-in-the-background-and-subway-F9Y3M5.jpg
+  caption: "Photo credit: [**Alamy**](https://alamy.com)"
+  cta_url: "https://alamy.com"
 permalink: /posts/2017/06/MTA-Analysis
 ---
 
@@ -71,11 +75,13 @@ Here's a map of our top stations:
 
 Now we can look at the subway rider volume by day of the week and time of day to get an idea of when to look for donors.
 
+<figure class="half">
+    <a href="/assets/images/MTA/Line Chart - Most Volume.png"><img src="/assets/images/MTA/Line Chart - Most Volume.png"></a>
+    <a href="/assets/images/MTA/Line Chart - Most Appealing.png"><img src="/assets/images/MTA/Line Chart - Most Appealing.png"></a>
+    <figcaption>Top stations by volume and composite appeal score</figcaption>
+</figure>
+
 <div class="12u$"><span class="image fit"><img src="/images/MTA/Bar Chart - Most Appealing.png" alt="" /></span></div>
-
-<div class="12u$"><span class="image fit"><img src="/images/MTA/Line Chart - Most Appealing.png" alt="" /></span></div>
-
-<div class="12u$"><span class="image fit"><img src="/images/MTA/Line Chart - Most Volume.png" alt="" /></span></div>
 
 <div class="12u$"><span class="image fit"><img src="/images/MTA/times.png" alt="" /></span></div>
 
