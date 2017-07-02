@@ -48,7 +48,7 @@ If we simply ranked the stations by volume of entries, it would come out like th
 9. 59th Street-Columbus Circle
 10. 96th Street
 
-Then applying our income and wealth data and scoring each station accordingly, the rankings shifted:
+Then after applying our income and wealth data and scoring each station accordingly, the rankings shifted:
 
 #### High-Potential Stations
 
@@ -89,7 +89,6 @@ Now we can look at the subway rider volume by day of the week and time of day to
 
 <figure>
   <a href="/assets/images/MTA/times.png"><img src="/assets/images/MTA/times.png"></a>
-	<figcaption>Peak volume at rush hour as we would expect</figcaption>
 </figure>
 
 
