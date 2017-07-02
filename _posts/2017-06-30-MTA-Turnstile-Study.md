@@ -2,7 +2,7 @@
 layout: single
 title: MTA Turnstile Study - Week 1 at Metis
 header:
-  image: http://c7.alamy.com/comp/F9Y3M5/new-york-city-subway-station-with-graffiti-in-the-background-and-subway-F9Y3M5.jpg
+  image: /assets/images/MTA/nyc_subway.png
   caption: "Photo credit: [**Alamy**](https://alamy.com)"
 permalink: /posts/2017/06/MTA-Analysis
 ---
