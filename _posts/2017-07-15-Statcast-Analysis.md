@@ -14,7 +14,7 @@ For those who have not heard of Statcast, it is just a tool that uses super powe
 {% raw %}<img src="/assets/images/Statcast/cast.jpg" alt="" class="full">{% endraw %}
 
 
-Statcast captures many more metrics like angle and spin of incoming pitch, range of fielders on each play, and many more. Why is this significant? Is it significant?
+Statcast captures many more metrics like the angle and spin of an incoming pitch, the range of fielders on each play, and many more. Why is this significant? Is it significant?
 
 ### The Big(ly) League Problem
 
@@ -34,6 +34,35 @@ We can create two regression models, one using strictly Statcast data, and anoth
 
 Let's look at the data first.
 
-Note: I collected traditional stats (plus some more advanced stats analyzing power and plate discipline) from FanGraphs since 2015. I used [Baseball-Savant](https://baseballsavant.mlb.com/) for collecting Statcast data over the same time period.
+Note: I collected traditional player stats (plus some more advanced stats analyzing power and plate discipline) from FanGraphs since 2015. I used [Baseball-Savant](https://baseballsavant.mlb.com/) for collecting Statcast data over the same time period.
 
 ### Data Viz / EDA
+
+Looking at about 90,000 baseballs hit in play over that time period, we can see a clear relationship between likelihood of getting a hit and the angle/speed of the ball off the bat.
+
+<figure>
+  <a href="/assets/images/Statcast/heat.png"><img src="/assets/images/Statcast/heat.png"></a>
+</figure>
+
+We can also see that you will gain more bases on a hit as you get closer to a sweet spot of angle/velocity.
+
+<figure>
+  <a href="/assets/images/Statcast/scatter.png"><img src="/assets/images/Statcast/scatter.png"></a>
+</figure>
+
+Now let's compare some stat groups and see how they correlate to WAR.
+
+<figure class="third">
+    <a href="/assets/images/Statcast/traditional_corr.png"><img src="/assets/images/Statcast/traditional_corr.png"></a>
+    <a href="/assets/images/Statcast/adv_corr.png"><img src="/assets/images/Statcast/adv_corr.png"></a>
+    <a href="/assets/images/Statcast/statcast_corr.png"><img src="/assets/images/Statcast/statcast_corr.png"></a>
+    <figcaption>Correlations of traditional, advanced, and statcast metrics to WAR (left to right)</figcaption>
+</figure>
+
+Wow! Statcast data does not have a strong correlation with WAR at all compared to the other metrics. This will probably mean it has low predictability.
+
+### Why Are the Correlations So Low for Statcast Data?
+
+Here's great example of why:
+
+{% raw %}<img src="/assets/images/Statcast/judge_altuve.jpg" alt="" class="full">{% endraw %}
