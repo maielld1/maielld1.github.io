@@ -11,7 +11,7 @@ If you've watched any MLB games or ESPN over the past couple years, you most lik
 
 For those who have not heard of Statcast, it is just a tool that uses super powerful high-speed cameras installed in every pro baseball stadium that are capable of measuring aspects of the game that were not possible before. When you hear people talk about launch angle and velocity, they are referring to the angle and speed that the baseball leaves the bat when someone hits the ball. Statcast is essentially really good at measuring this exact moment:
 
-{% raw %}<img src="{{ site.url }}/assets/images/Statcast/cast.jpg" alt="" class="full">{% endraw %}
+{% raw %}<img src="/assets/images/Statcast/cast.jpg" alt="" class="full">{% endraw %}
 
 
 Statcast captures many more metrics like angle and spin of incoming pitch, range of fielders on each play, and many more. Why is this significant? Is it significant?
