@@ -130,3 +130,5 @@ Examples:
 As a player gets older, their exit velocity likely falls. Statcast can be used to identify declining players.
 
 On the other side, a coach might notice a player increasing their production at the plate. They look at the numbers and find that their launch angle has increased by 4 degrees since last season. The coach can tell them to keep swinging with that new uppercut! [We have seen this in the MLB already](https://www.washingtonpost.com/graphics/sports/mlb-launch-angles-story/?utm_term=.fa8002e91eff)
+
+I definitely plan to return to this data set again to see what other Statcast data could be of value. Feel free to check out my code/notebooks on my [github](https://github.com/maielld1/Metis-Projects/tree/master/Statcast%20Project).

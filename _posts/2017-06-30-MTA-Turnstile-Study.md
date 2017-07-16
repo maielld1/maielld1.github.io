@@ -1,6 +1,6 @@
 ---
 layout: single
-title: MTA Turnstile Study - Week 1 at Metis
+title: MTA Turnstile Study
 header:
   image: /assets/images/MTA/nyc_subway.png
   caption: "Photo credit: [**Alamy**](https://alamy.com)"
