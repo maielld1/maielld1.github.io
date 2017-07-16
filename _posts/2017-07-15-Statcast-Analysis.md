@@ -28,7 +28,7 @@ Let's see how much a player's average launch angle, velocity, and barrels can te
 
 ### The Approach
 
-When we say player value, in baseball that means WAR, or Wins Above Replacement. If you want to read more about it, or any baseball stats for that matter, go to [FanGraphs](http://www.fangraphs.com/library/war/war-position-players/). If you don't feel like reading about it, it just is an overall measure of how many more wins a player contributes to a baseball team than some replacement player on the bench.
+When we say player value, in baseball that means WAR, or Wins Above Replacement. If you want to read more about it, or any baseball stats for that matter, go to [FanGraphs](http://www.fangraphs.com/library/war/war-position-players/). If you don't care for the details, it is just an overall measure of how many more wins a player contributes to a baseball team than some replacement player on the bench.
 
 We can create two regression models, one using strictly Statcast data, and another using traditional metrics to compare, and see which has higher predictability (R^2).
 
@@ -56,7 +56,7 @@ Now let's compare some stat groups and see how they correlate to WAR.
     <a href="/assets/images/Statcast/traditional_corr.png"><img src="/assets/images/Statcast/traditional_corr.png"></a>
     <a href="/assets/images/Statcast/adv_corr.png"><img src="/assets/images/Statcast/adv_corr.png"></a>
     <a href="/assets/images/Statcast/statcast_corr.png"><img src="/assets/images/Statcast/statcast_corr.png"></a>
-    <figcaption>Correlations of traditional, advanced, and statcast metrics to WAR (left to right)</figcaption>
+    <figcaption>Correlations of some traditional, advanced, and statcast metrics to WAR (left to right)</figcaption>
 </figure>
 
 Wow! Statcast data does not have a strong correlation with WAR at all compared to the other metrics. This will probably mean it has low predictability.
@@ -66,3 +66,41 @@ Wow! Statcast data does not have a strong correlation with WAR at all compared t
 Here's great example of why:
 
 {% raw %}<img src="/assets/images/Statcast/judge_altuve.jpg" alt="" class="full">{% endraw %}
+
+On the left is Aaron Judge (featured in the post header). He's 6' 7'' and about 280 lbs. He's a beast. Almost twice as big as the guy to his right, José Altuve, who is 5' 6'' and 165 lbs. No matter how hard Altuve tries, he is not going to hit the ball nearly as hard as Judge. Judge hits the ball with an average exit velocity of 96 MPH and barrels the ball 26.4% of the time while Altuve averages out at 85 MPH with a barrel occurring only 6.1% of the time. You might assume he is not as good at this game that revolves around hitting round things with sticks as hard as possible...
+
+Well...
+
+They are actually both the league leaders (Judge is ahead, but it's close) in WAR! How is that possible!?
+
+There must be a lot more to this game than power at the plate, which when you think about it, is what Statcast is mostly measuring.
+
+<figure class="half">
+    <a href="/assets/images/Statcast/war_speed.png"><img src="/assets/images/Statcast/war_speed.png"></a>
+    <a href="/assets/images/Statcast/war_angle.png"><img src="/assets/images/Statcast/war_angle.png"></a>
+    <figcaption>Weak Correlations with WAR</figcaption>
+</figure>
+
+<figure class="half">
+    <a href="/assets/images/Statcast/slg_speed.png"><img src="/assets/images/Statcast/slg_speed.png"></a>
+    <a href="/assets/images/Statcast/slg_angle.png"><img src="/assets/images/Statcast/slg_angle.png"></a>
+    <figcaption>Stronger Correlations with SLG</figcaption>
+</figure>
+
+We can prove this with linear models as well.
+
+### Modeling
+
+I went ahead and made linear models combining the different eras of baseball statistics separately.
+
+<figure>
+  <a href="/assets/images/Statcast/trad_model.png"><img src="/assets/images/Statcast/trad_model.png"></a>
+</figure>
+
+<figure>
+  <a href="/assets/images/Statcast/adv_model.png"><img src="/assets/images/Statcast/adv_model.png"></a>
+</figure>
+
+<figure>
+  <a href="/assets/images/Statcast/cast_war_model.png"><img src="/assets/images/Statcast/cast_war_model.png"></a>
+</figure>
