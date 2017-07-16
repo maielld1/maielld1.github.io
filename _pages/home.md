@@ -6,5 +6,4 @@ header:
   overlay_image: /assets/images/mrobot.jpg
   caption:
 excerpt: 'Seeking answers with math and a keyboard'
-
 ---
