@@ -1,6 +1,6 @@
 ---
 layout: single
-title: Looking at the Value of Statcast in MLB
+title: The Value of Statcast Data in MLB
 header:
   image: /assets/images/Statcast/judge.jpg
   caption: "Photo credit: [**MLB**](https://mlb.com)"
@@ -91,16 +91,42 @@ We can prove this with linear models as well.
 
 ### Modeling
 
-I went ahead and made linear models combining the different eras of baseball statistics separately.
+I went ahead and made linear models combining the different eras of baseball statistics separately. I trained the models on 80% of my scraped data and below are the predicted vs. actual WAR values. The red line just shows y=x which would be indicate completely accurate prediction (1.0 R^2).  
 
 <figure>
   <a href="/assets/images/Statcast/trad_model.png"><img src="/assets/images/Statcast/trad_model.png"></a>
+  <figcaption>Traditional Stats (~0.4 R^2)</figcaption>
 </figure>
 
 <figure>
   <a href="/assets/images/Statcast/adv_model.png"><img src="/assets/images/Statcast/adv_model.png"></a>
+  <figcaption>Advanced Stats (~0.512 R^2)</figcaption>
 </figure>
 
 <figure>
   <a href="/assets/images/Statcast/cast_war_model.png"><img src="/assets/images/Statcast/cast_war_model.png"></a>
+  <figcaption>Statcast Stats (~0.21 R^2 ... worst model :( ) </figcaption>
 </figure>
+
+As we expected from the correlations earlier, Statcast data was not sufficient alone in predicting player WAR. Again, we see much stronger predictive ability for a player's SLG numbers:
+
+<figure>
+  <a href="/assets/images/Statcast/slg_model.png"><img src="/assets/images/Statcast/slg_model.png"></a>
+  <figcaption>Statcast to SLG Model (~0.5 R^2) </figcaption>
+</figure>
+
+### Conclusion and Thoughts
+
+1) Baseball involves a lot of randomness, can’t expect a nearly perfect model.
+
+2) Statcast is interesting, but we (a GM) will also need many more features to measure player value.
+
+3) Stronger measure of a player’s slugging ability, so there is some value to Statcast!
+
+4) Maybe better for player by player analysis rather than trying to generalize over the entire league.
+
+Examples:
+
+As a player gets older, their exit velocity likely falls. Statcast can be used to identify declining players.
+
+On the other side, a coach might notice a player increasing their production at the plate. They look at the numbers and find that their launch angle has increased by 4 degrees since last season. The coach can tell them to keep swinging with that new uppercut! [We have seen this in the MLB already](https://www.washingtonpost.com/graphics/sports/mlb-launch-angles-story/?utm_term=.fa8002e91eff)
