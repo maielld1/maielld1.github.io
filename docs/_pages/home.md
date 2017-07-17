@@ -1,6 +1,6 @@
 ---
 layout: splash
-permalink: /dm
+permalink: /
 header:
   overlay_color: "#5e616c"
   overlay_image: /assets/images/mrobot.jpg
