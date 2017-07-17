@@ -32,9 +32,13 @@ When we say player value, in baseball that means WAR, or Wins Above Replacement.
 
 We can create two regression models, one using strictly Statcast data, and another using traditional metrics to compare, and see which has higher predictability (R^2).
 
-Let's look at the data first.
 
 Note: I collected traditional player stats (plus some more advanced stats analyzing power and plate discipline) from FanGraphs since 2015. I used [Baseball-Savant](https://baseballsavant.mlb.com/) for collecting Statcast data over the same time period.
+
+**Tools used**
+-Scraping: BeautifulSoup
+-Analysis: Python (Pandas, NumPy, Scikit-learn, etc.)
+-Visualizations: matplotlib, seaborn, bokeh
 
 ### Data Viz / EDA
 
