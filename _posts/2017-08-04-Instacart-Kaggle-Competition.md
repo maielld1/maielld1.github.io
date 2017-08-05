@@ -52,7 +52,7 @@ How about looking at departments?
 
 This makes sense too! Produce items get reordered a lot as they expire, but personal care items don't get reordered quite as often. You don't need new toothpaste every week...unless you have a huge family.
 
-And check out this cool visualization of the departments and aisle sizes with d3!
+And check out this cool visualization of the department and aisle sizes made with d3! The bigger the bubble, the more popular the department/aisle/product.
 
 <meta charset="utf-8">
 <style>
