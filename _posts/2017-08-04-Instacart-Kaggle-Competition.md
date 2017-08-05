@@ -1,6 +1,6 @@
 ---
 layout: single
-title: Instacart Market Basket Analysis \n (Kaggle Competition)
+title: "Instacart Market Basket Analysis\n(Kaggle Competition)"
 header:
   image: /assets/images/Instacart/Instacart_kaggle.png
   caption: "Photo credit: [**Kaggle**](https://kaggle.com)"
@@ -37,8 +37,9 @@ As the data was split into separate csv files (the users and orders, products in
 
 Thinking about how people shop in general, it makes sense that items they add to their cart first are probably a priority to them. These are probably items that they order all of the time.
 
+
 <figure>
-  <a href="/assets/images/Instacart/cart_order.png"><img src="/assets/images/Instacart/cart_order.png"></a>
+  <a href="/assets/images/Instacart/cart_reorder.png"><img src="/assets/images/Instacart/cart_reorder.png"></a>
 </figure>
 
 Just as we thought! The earlier a product is added to a customer's cart, the more likely that product is to be reordered in the future.
@@ -76,9 +77,9 @@ With our EDA in mind, we can start to come up with some informative features. He
 **User/Product Relationship:**
 
 1. Average Cart Order
-2. # Times User Ordered the Product
+2. Times User Ordered the Product
 3. Product Reorder Frequency (2 divided by total user orders)
-4. # Orders Since Previous Product Order
+4. Orders Since Previous Product Order
 5. Days Since Previous Product Order
 6. Streak of Product Orders (number of orders in a row)
 
