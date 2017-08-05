@@ -1,7 +1,6 @@
 ---
 layout: single
-title: Instacart Market Basket Analysis
-      (Kaggle Competition)
+title: Instacart Market Basket Analysis \n (Kaggle Competition)
 header:
   image: /assets/images/Instacart/Instacart_kaggle.png
   caption: "Photo credit: [**Kaggle**](https://kaggle.com)"
@@ -55,6 +54,33 @@ This makes sense too! Produce items get reordered a lot as they expire, but pers
 I won't add more feature charts here to keep from chart overload, but there is also a clear tendency for more items being bought earlier in the week as well as in the early morning or after work hours.
 
 ### Feature Engineering!
+
+With our EDA in mind, we can start to come up with some informative features. Here are some of the ones I found success with:
+
+**User Specific:**
+
+1. Average Order Size
+2. Average Number of Reorders per Cart
+3. Average Days Between Orders
+4. Average Order Hour of Day
+5. Average Oder Day of Week
+
+**Product Specific (generalized over all users):**
+
+1. Total Orders of Product
+2. Times Product was Reordered
+3. Product Reorder Probability (2 divided by 1)
+4. Department (categorical)
+5. Aisle (categorical)
+
+**User/Product Relationship:**
+
+1. Average Cart Order
+2. # Times User Ordered the Product
+3. Product Reorder Frequency (2 divided by total user orders)
+4. # Orders Since Previous Product Order
+5. Days Since Previous Product Order
+6. Streak of Product Orders (number of orders in a row)
 
 
 
