@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "Instacart Market Basket Analysis\n(Kaggle Competition)"
+title: "Instacart Market Basket Analysis \n (Kaggle Competition)"
 header:
   image: /assets/images/Instacart/Instacart_kaggle.png
   caption: "Photo credit: [**Kaggle**](https://kaggle.com)"
@@ -83,13 +83,17 @@ With our EDA in mind, we can start to come up with some informative features. He
 5. Days Since Previous Product Order
 6. Streak of Product Orders (number of orders in a row)
 
+After putting all of this together, I can confidently say I am a dataframe groupby, aggregate, and merging master.
+
+### Modeling
+
 
 
 “The Instacart Online Grocery Shopping Dataset 2017”, Accessed from https://www.instacart.com/datasets/grocery-shopping-2017
 
 [Kaggle Competiton Link](https://www.kaggle.com/c/instacart-market-basket-analysis)
 
-Some Thank Yous:
+Acknowledgments:
 
 1. Instacart for open-sourcing their data!
 2. Kaggle for hosting the competition
