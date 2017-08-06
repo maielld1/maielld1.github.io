@@ -57,6 +57,12 @@ And check out this cool visualization of the department and aisle sizes made wit
 <meta charset="utf-8">
 <style>
 
+.svg {
+  display: block;
+  margin: auto;
+  border: 1px solid gray;
+}
+
 .node {
   cursor: pointer;
 }
@@ -84,6 +90,7 @@ And check out this cool visualization of the department and aisle sizes made wit
 }
 
 </style>
+
 <svg width="960" height="960"></svg>
 <script src="https://d3js.org/d3.v4.min.js"></script>
 <script>
