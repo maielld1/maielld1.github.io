@@ -11,7 +11,7 @@ permalink: /posts/2017/08/Instacart-Kaggle
 
 I had my eye on this competition for a couple months and, after my first few weeks of some intensive learning at Metis bootcamp, I felt like I was ready to officially take it on.
 
-For anyone who hasn't head of Instacart:
+For anyone who hasn't heard of Instacart:
 
 "Whether you shop from meticulously planned grocery lists or let whimsy guide your grazing, our unique food rituals define who we are. Instacart, a grocery ordering and delivery app, aims to make it easy to fill your refrigerator and pantry with your personal favorites and staples when you need them. After selecting products through the Instacart app, personal shoppers review your order and do the in-store shopping and delivery for you."
 
@@ -206,6 +206,15 @@ With our EDA in mind, we can start to come up with some informative features. He
 After putting all of this together, I can confidently say I am a dataframe groupby, aggregate, and merging master.
 
 ### Modeling
+
+Being that we are trying to predict whether a product will or will not be reordered, this makes it a classification problem. There are tons of algorithms that we can try, but for simplicity I'll only consider two models:
+
+1. Logistic Regression (fast for our large amount of data)
+2. XGBoost (gradient boosted trees, always works well on Kaggle Comps)
+
+Being that this is my first official crack at a Kaggle competition, I saw this as a great opportunity to become familiar with the famed XGBoost library (thank you Tianqi Chen!).
+
+Now having used it, I am ALL ABOUT IT.
 
 
 
