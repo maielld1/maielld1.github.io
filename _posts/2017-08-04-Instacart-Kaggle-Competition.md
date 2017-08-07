@@ -240,13 +240,18 @@ On a larger scale with the real data, we can run our models and get our reorder 
 
 #### Side note: This is when I moved my data to a 64GB RAM AWS Instance, the data was too much for my measly 8GB RAM Macbook. I shouldn't complain though...I bought it off craigslist.
 
-<figure class="half">
+<figure>
     <a href="/assets/images/Instacart/thres_f1.png"><img src="/assets/images/Instacart/thres_f1.png"></a>
-    <a href="/assets/images/Instacart/feature_imp.png"><img src="/assets/images/Instacart/feature_imp.png"></a>
-    <figcaption>Optimizing F1, and XGBoost Feature Importances</figcaption>
 </figure>
 
-Great! So we're seeing an optimal threshold set at around 0.21 or 0.22. We also see a bunch of our engineered features at the top of XGBoost's model importance list. The hard work paid off!
+Great! So we're seeing an optimal threshold set at around 0.21 or 0.22. It also looks like XGBoost outperforms logistic regression by a decent margin. I GET THE XGBOOST HYPE. We'll use that when we create a Kaggle submission. Let's look at the feature importances:
+
+<figure>
+    <a href="/assets/images/Instacart/feature_imp.png"><img src="/assets/images/Instacart/feature_imp.png"></a>
+    <figcaption>XGBoost Feature Importances</figcaption>
+</figure>
+
+We also see a bunch of our engineered features at the top of XGBoost's model importance list. The hard work paid off!
 
 
 
