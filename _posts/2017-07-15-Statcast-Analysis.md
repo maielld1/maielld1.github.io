@@ -129,7 +129,7 @@ As we expected from the correlations earlier, Statcast data was not sufficient a
 
 4) Maybe better for player by player analysis rather than trying to generalize over the entire league.
 
-Examples:
+#### Examples:
 
 As a player gets older, their exit velocity likely falls. Statcast can be used to identify declining players.
 

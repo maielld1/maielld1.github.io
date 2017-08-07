@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "Instacart Market Basket Analysis \n (Kaggle Competition)"
+title: "Instacart Market Basket Analysis (Kaggle Competition)"
 header:
   image: /assets/images/Instacart/Instacart_kaggle.png
   caption: "Photo credit: [**Kaggle**](https://kaggle.com)"
@@ -226,6 +226,7 @@ When we run the models on our grouped data with all of our engineered features, 
   <a href="/assets/images/Instacart/proba_1.png"><img src="/assets/images/Instacart/proba_1.png"></a>
 </figure>
 
+
 This (fake) data illustrates how difficult it will be to classify reorders. It makes sense though with the class imbalance. If we simply predicted "Not Reorder" for every product, we would be right about 85% of the time. 85% accuracy is great in some applications but not if we have 0 recall.
 
 Let's be more lenient here and make a 20% threshold for reorders:
@@ -233,6 +234,7 @@ Let's be more lenient here and make a 20% threshold for reorders:
 <figure>
   <a href="/assets/images/Instacart/proba_2.png"><img src="/assets/images/Instacart/proba_2.png"></a>
 </figure>
+
 
 Now that captures the right classifications!
 
@@ -251,7 +253,7 @@ Great! So we're seeing an optimal threshold set at around 0.21 or 0.22. It also 
     <figcaption>XGBoost Feature Importances</figcaption>
 </figure>
 
-We also see a bunch of our engineered features at the top of XGBoost's model importance list. The hard work paid off!
+We see a bunch of our engineered features at the top of XGBoost's model importance list. The hard work paid off!
 
 
 
