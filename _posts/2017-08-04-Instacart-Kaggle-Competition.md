@@ -207,14 +207,50 @@ After putting all of this together, I can confidently say I am a dataframe group
 
 ### Modeling
 
-Being that we are trying to predict whether a product will or will not be reordered, this makes it a classification problem. There are tons of algorithms that we can try, but for simplicity I'll only consider two models:
+Being that we are trying to predict whether a product will or will not be reordered, this makes it a binary classification problem. There are tons of algorithms that we can try, but for simplicity I'll only consider two models:
 
-1. Logistic Regression (fast for our large amount of data)
-2. XGBoost (gradient boosted trees, always works well on Kaggle Comps)
+1. **Logistic Regression** (fast for our large amount of data)
+2. **XGBoost** (gradient boosted trees, always works well on Kaggle Comps)
 
 Being that this is my first official crack at a Kaggle competition, I saw this as a great opportunity to become familiar with the famed XGBoost library (thank you Tianqi Chen!).
 
 Now having used it, I am ALL ABOUT IT.
+
+It is important to mention that this contest ranks submissions on **F1 score** (harmonic mean between precision and recall), which makes sense in this application. Instacart doesn't want to send recommendations to people for products that they are not interested in. They also don't want to miss an opportunity to convince someone to buy a product they likely will want. We will need to tune our model to maximize F1.
+
+### Classifications
+
+When we run the models on our grouped data with all of our engineered features, we find that the probabilities for reorder are very low across the board. We'll need to be more lenient than requiring over 50% reorder probability to classify as a reorder.
+
+<figure>
+  <a href="/assets/images/Instacart/proba_1.png"><img src="/assets/images/Instacart/proba_1.png"></a>
+</figure>
+
+This (fake) data illustrates how difficult it will be to classify reorders. It makes sense though with the class imbalance. If we simply predicted "Not Reorder" for every product, we would be right about 85% of the time. 85% accuracy is great in some applications but not if we have 0 recall.
+
+Let's be more lenient here and make a 20% threshold for reorders:
+
+<figure>
+  <a href="/assets/images/Instacart/proba_2.png"><img src="/assets/images/Instacart/proba_2.png"></a>
+</figure>
+
+Now that captures the right classifications!
+
+On a larger scale with the real data, we can run our models and get our reorder probabilities for each user/product. Then we can than try a bunch of thresholds and see which one yields the best F1 score!
+
+#### Side note: This is when I moved my data to a 64GB RAM AWS Instance, the data was too much for my measly 8GB RAM Macbook. I shouldn't complain though...I bought it off craigslist.
+
+<figure class="half">
+    <a href="/assets/images/Instacart/thres_f1.png"><img src="/assets/images/Instacart/thres_f1.png"></a>
+    <a href="/assets/images/Instacart/feature_imp.png"><img src="/assets/images/Instacart/feature_imp.png"></a>
+    <figcaption>Optimizing F1, and XGBoost Feature Importances</figcaption>
+</figure>
+
+Great! So we're seeing an optimal threshold set at around 0.21 or 0.22. We also see a bunch of our engineered features at the top of XGBoost's model importance list. The hard work paid off!
+
+
+
+
 
 
 
