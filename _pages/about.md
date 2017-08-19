@@ -5,7 +5,7 @@ permalink: /about/
 author_profile: true
 ---
 
-My strengths are in Data Analytics and Software Development. I aim to use my skill set to help people make data-driven decisions based on the proven facts that are available.
+My strengths are in Machine Learning and Software Development. I like to use math and technology to make decision-making easier.
 
 I previously worked as a Software Developer at UPS, I help manage a web application and massive database to automate the accounting process for the collections department. I also developed a model of their employee engagement survey using natural language processing to perform sentiment analysis on employee responses.
 
