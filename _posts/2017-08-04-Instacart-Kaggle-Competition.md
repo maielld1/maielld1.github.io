@@ -7,7 +7,7 @@ header:
 permalink: /posts/2017/08/Instacart-Kaggle
 ---
 
-**Currently in the top 8% of the public leaderboard**
+**Finished in top 21% of the private leaderboard**
 
 I had my eye on this competition for a couple months and, after my first few weeks of some intensive learning at Metis bootcamp, I felt like I was ready to officially take it on.
 

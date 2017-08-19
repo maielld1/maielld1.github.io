@@ -121,13 +121,13 @@ As we expected from the correlations earlier, Statcast data was not sufficient a
 
 ### Conclusion and Thoughts
 
-1) Baseball involves a lot of randomness, can’t expect a nearly perfect model.
+- Baseball involves a lot of randomness, can’t expect a nearly perfect model.
 
-2) Statcast is interesting, but we (a GM) will also need many more features to measure player value.
+- Statcast is interesting, but we (a GM) will also need many more features to measure player value.
 
-3) Stronger measure of a player’s slugging ability, so there is some value to Statcast!
+- Stronger measure of a player’s slugging ability, so there is some value to Statcast!
 
-4) Maybe better for player by player analysis rather than trying to generalize over the entire league.
+- Maybe better for player by player analysis rather than trying to generalize over the entire league.
 
 #### Examples:
 

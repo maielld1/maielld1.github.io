@@ -12,4 +12,4 @@ Previously:
   - Systems Engineer at Lockheed Martin
   - Electrical Engineering at The College of New Jersey (TCNJ)
 
-I like to use Python (Pandas, NumPy, etc.) and SQL for modeling and analysis, but I also have experience with Java and R.
+I like to use Python (Pandas, NumPy, Scikit-learn, etc.) and SQL for modeling and analysis, but I also have experience with Java and R.
