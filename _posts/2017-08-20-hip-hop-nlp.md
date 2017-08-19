@@ -7,4 +7,4 @@ header:
 permalink: /posts/2017/08/Hip_Hop_NLP
 ---
 
-Rap and Hip Hop music is actually the most listened to genre in the world.
+Hip Hop music is actually the most listened to genre in the world, [according to an analysis of 20 billion songs on Spotify](http://www.independent.co.uk/arts-entertainment/music/news/hip-hop-is-the-most-listened-to-genre-in-the-world-according-to-spotify-analysis-of-20-billion-10388091.html)
