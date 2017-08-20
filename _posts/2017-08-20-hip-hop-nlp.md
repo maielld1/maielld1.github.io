@@ -11,7 +11,7 @@ Hip Hop music is actually the most listened to genre in the world, [according to
 
 But some people say Hip Hop is Dead:
 
-"Everybody sound the same, 
+> "Everybody sound the same, 
 commercialize the game
 Reminiscing when it wasn't all business
 It forgot where it started"
@@ -53,9 +53,56 @@ Maybe we'll be able to answer some other questions along the way.
 
 After gathering my music data and preprocessing the lyrics (tokenizing, removing stop words, etc.), I threw it all into wordcloud to get an idea of how the words changed over time.
 
-<figure>
+<figure class="half">
   <a href="/assets/images/Hip Hop/lastpoets.png">
   <img src="/assets/images/Hip Hop/lastpoets.png"></a>
+  <a href="/assets/images/Hip Hop/cloud80.png">
+  <img src="/assets/images/Hip Hop/cloud80.png"></a>
 </figure>
 
-So disclaimer here, **I only have lyrics from one artist in 1970, The Last Poets.** But it's still interesting to see as they clearly talked a lot about ideas and making social commentary with words like "black" and "revolution" coming up as the most frequent.  
+So disclaimer here, **I only have lyrics from one artist in 1970, The Last Poets.** But it's still interesting to see as they clearly talked a lot about ideas and making social commentary with words like "black" and "revolution" coming up as the most frequent. The types of words become less frequent in the 80s. Then we move on to the 90s and 2000s and see a shift to a lot of profanity ("sword" is really "s-word" for "shit" and so on for other tokens ending in "word").
+
+<figure class="third">
+  <a href="/assets/images/Hip Hop/cloud1990.png">
+  <img src="/assets/images/Hip Hop/cloud1990.png"></a>
+  <a href="/assets/images/Hip Hop/cloud2000.png">
+  <img src="/assets/images/Hip Hop/cloud2000.png"></a>
+  <a href="/assets/images/Hip Hop/cloud10.png">
+  <img src="/assets/images/Hip Hop/cloud10.png"></a>
+</figure>
+
+#### Lyrical Complexity
+
+To measure the lyrical complexity of a song, I created a simple metric to essentially get the ratio of unique words in the song to the total words. Here's an example of how this was calculated using a line from an extremely lyrically complex song:
+
+> "Panda, Panda
+  Panda, Panda, Panda, Panda"
+  -Desiigner "Panda" (2006)
+
+- Total Words: 6
+- Unique Words: 1
+- Complexity = (Unique Words / Total Words) x Unique Words
+             = 0.1667
+
+Ok...maybe a bad example. But you get the point. A song like this will score very low for this metric.
+
+So I applied this calculation on every song in my database and found some interesting results.
+
+<figure class="half">
+  <a href="/assets/images/Hip Hop/songlength.png">
+  <img src="/assets/images/Hip Hop/songlength.png"></a>
+  <a href="/assets/images/Hip Hop/complex_time.png">
+  <img src="/assets/images/Hip Hop/complex_time.png"></a>
+  <figcaption>Decrease in lyric length and complecity over time</figcaption>
+</figure>
+
+There is a clear decreasing trend for simply the length of the lyrics, but we notice a sharper decline when applying our lyrical complexity metric. It's been decreasing more dramatically even after Nas's "Hip Hop is Dead" release.
+
+Let's take a look at where each artist ranks in lyrical complexity.
+
+<figure class="half">
+  <a href="/assets/images/Hip Hop/artists_by_complexity.png">
+  <img src="/assets/images/Hip Hop/artists_by_complexity.png"></a>
+</figure>
+
+There's Desiigner! All the way at the bottom, so my metric must me valuable! We also see Wu Tang Clan and Nas at the top, which makes sense! 
