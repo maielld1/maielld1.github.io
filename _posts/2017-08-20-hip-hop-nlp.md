@@ -159,3 +159,26 @@ And... Ice Cube talks about Ice Cube stuff...
 </figure>
 
 ### Topic Trends
+
+Now we can see how these topics change over time. I'll average up the topic scores for each decade and we can see if we notice any changes:
+
+<figure>
+  <a href="/assets/images/Hip Hop/topic_trends.png">
+  <img src="/assets/images/Hip Hop/topic_trends.png"></a>
+</figure>
+
+Interesting! We see see that people are talking about sex more than they used to, and the thoughts/brotherhood topic is clearly on the decline! This supports our hypothesis that artists are making less social commentary these days!
+
+### Conclusions
+
+To answer our initial questions:
+
+- Do artists actually have less lyrics now?
+  - **Yes, a slight decline**
+- Do artists use less variety in their words?
+  - **Yes, there is a sharp decline since 1990s**
+- Are they sending less of a message than they used to:
+  - Talking less about ideas/social commentary
+    - **Yes, topics like this are clearly declining**
+  - More emphasis on partying, girls, cars, etc.
+    - **Definitely an increase in Sex and Love, but actually a decline in gangs/money related topics**
