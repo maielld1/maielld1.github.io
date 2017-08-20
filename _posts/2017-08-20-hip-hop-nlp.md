@@ -106,3 +106,15 @@ Let's take a look at where each artist ranks in lyrical complexity.
 </figure>
 
 There's Desiigner! All the way at the bottom, so my metric must me valuable! We also see Wu Tang Clan and Nas at the top, which makes sense!
+
+I realize that's not easy to read so I zoomed in to the top 20 and bottom 20 for readability. See where your favorite artist scored!
+
+<figure>
+  <a href="/assets/images/Hip Hop/top20.png">
+  <img src="/assets/images/Hip Hop/top20.png"></a>
+</figure>
+
+<figure>
+  <a href="/assets/images/Hip Hop/bottom20.png">
+  <img src="/assets/images/Hip Hop/bottom20.png"></a>
+</figure>
