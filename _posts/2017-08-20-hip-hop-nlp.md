@@ -93,16 +93,16 @@ So I applied this calculation on every song in my database and found some intere
   <img src="/assets/images/Hip Hop/songlength.png"></a>
   <a href="/assets/images/Hip Hop/complex_time.png">
   <img src="/assets/images/Hip Hop/complex_time.png"></a>
-  <figcaption>Decrease in lyric length and complecity over time</figcaption>
+  <figcaption>Decrease in lyric length and complexity over time</figcaption>
 </figure>
 
 There is a clear decreasing trend for simply the length of the lyrics, but we notice a sharper decline when applying our lyrical complexity metric. It's been decreasing more dramatically even after Nas's "Hip Hop is Dead" release.
 
 Let's take a look at where each artist ranks in lyrical complexity.
 
-<figure class="half">
+<figure>
   <a href="/assets/images/Hip Hop/artists_by_complexity.png">
   <img src="/assets/images/Hip Hop/artists_by_complexity.png"></a>
 </figure>
 
-There's Desiigner! All the way at the bottom, so my metric must me valuable! We also see Wu Tang Clan and Nas at the top, which makes sense! 
+There's Desiigner! All the way at the bottom, so my metric must me valuable! We also see Wu Tang Clan and Nas at the top, which makes sense!
