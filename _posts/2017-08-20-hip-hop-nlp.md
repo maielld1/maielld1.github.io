@@ -118,3 +118,44 @@ I realize that's not easy to read so I zoomed in to the top 20 and bottom 20 for
   <a href="/assets/images/Hip Hop/bottom20.png">
   <img src="/assets/images/Hip Hop/bottom20.png"></a>
 </figure>
+
+### Topic Modeling
+
+Now that we have a good idea of the complexity of each artist's lyrics, let's dig deeper into what they're actually talking about. **Are Artists really sending less of a message than they used to?**
+
+To do this, I used Term Frequency-Inverse Document Frequency (TF-IDF) to extract the importances of the words (I included bi-grams too). Then I used Non-Negative Matrix Factorization (NMF) to take this matrix of word importances and group words that appear frequently together to extract topics.
+
+I had to play around with the minimum and maximum document frequency parameters a bit, but was able to find a group of 4 to 5 topics that represented the majority of topics being discussed. These topics can certainly be broken down to find sub-topics, but for this exploration, the high level topics were good enough.
+
+Here's the raw output of the NMF in a table:
+
+<figure>
+  <a href="/assets/images/Hip Hop/topics.png">
+  <img src="/assets/images/Hip Hop/topics.png"></a>
+</figure>
+
+This output made sense, it looks like it's grouping the right words together. Based on the output I gave each topic a proper name:
+
+- Topic 1 -> **Thoughts/Brotherhood:** songs that make commentary and send a message will likely fall into this bucket.
+- Topic 2 --> **Love/Feelings:** ...will probably find a lot of Drake in there.
+- Topic 3 --> **Sexual:** a lot of overlap with previous topic but definitely less feelings in here.
+- Topic 4 --> **Gangs/Money:** find a lot of songs talking about drugs, getting money, etc.
+- Topic 5 --> **...Ice Cube?:** I guess he gets his own topic? There are like 300 songs from him and his various groups like N.W.A. I should probably filter this out or just group it with the gangs topic but I'll keep it for fun.
+
+We can look into a few songs that most people will know the lyrics too and see how accurate the topic models are:
+
+<figure>
+  <a href="/assets/images/Hip Hop/topic_examples.png">
+  <img src="/assets/images/Hip Hop/topic_examples.png"></a>
+</figure>
+
+Awesome! Drake is definitely talking about a girl the whole time in "Child's Play", "Ten Crack Commandments" is all about drugs, and Kendrick is talking about his rough up-bringing in "DNA." The topic model is working!
+
+And... Ice Cube talks about Ice Cube stuff...
+
+<figure>
+  <a href="/assets/images/Hip Hop/ice_cube.png">
+  <img src="/assets/images/Hip Hop/ice_cube.png"></a>
+</figure>
+
+### Topic Trends
