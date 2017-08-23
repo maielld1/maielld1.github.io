@@ -265,6 +265,8 @@ We see a bunch of our engineered features at the top of XGBoost's model importan
 
 [Kaggle Competiton Link](https://www.kaggle.com/c/instacart-market-basket-analysis)
 
+My [github repo](https://github.com/maielld1/Instacart-Kaggle-Competition) with my notebooks and code
+
 Acknowledgments:
 
 1. Instacart for open-sourcing their data!

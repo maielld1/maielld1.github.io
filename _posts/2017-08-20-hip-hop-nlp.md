@@ -182,3 +182,6 @@ To answer our initial questions:
     - **Yes, topics like this are clearly declining**
   - More emphasis on partying, girls, cars, etc.
     - **Definitely an increase in Sex and Love, but actually a decline in gangs/money related topics**
+
+
+Check out my [github repo](https://github.com/maielld1/Hip-Hop-Lyrics-NLP-Analysis) for code
