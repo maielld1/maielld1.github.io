@@ -8,7 +8,7 @@ author_profile: true
 My strengths are in data anaysis/engineering, machine learning, and process automation. I like to use math and technology to make decision-making easier.
 
 Currently:
-  - Senior Analyst, Revenue & Strategy at FanDuel
+  - Manager, Revenue & Strategy at FanDuel
 
 Previously:
   - Software Developer at UPS
