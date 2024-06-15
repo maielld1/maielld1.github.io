@@ -5,7 +5,7 @@ permalink: /about/
 author_profile: true
 ---
 
-My strengths are in data anaysis/engineering, machine learning, and process automation. I like to use math and technology to make decision-making easier.
+My strengths are in software engineering, machine learning, data analytics, and process automation. I like to use math and technology to make decision-making easier.
 
 Currently:
   - Manager, Revenue & Strategy at FanDuel
